@@ -1,0 +1,312 @@
+body {
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;   
+}
+
+header {
+    width: 1200px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    /* 높이 조정 */
+}
+
+.header-box1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50%;
+    /* 높이 조정 */
+}
+
+.header-box1-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-box1-right a {
+    color: #000;
+    text-decoration: none;
+    margin-left: 20px;
+    border-bottom: none;
+}
+
+.header-box2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    /* 높이 조정 */
+}
+
+.header-box2-left img {
+    height: 80px;
+    margin-right: 1px;
+}
+
+.header-box2-center form {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #5F0080;
+    border-radius: 5px;
+    /* 모서리를 좀 덜 둥글게 */
+    padding: 10px;
+    width: 400px;
+    height: 30px;
+    /* 가로 길이를 400px로 */
+}
+
+.header-box2-center input[type="text"] {
+    border: none;
+    font-size: 16px;
+    margin-right: 10px;
+    flex-grow: 1;
+    /* input을 늘리기 위해 추가 */
+}
+
+.header-box2-center button[type="submit"] {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.header-box2-center form {
+    border-color: #5F0080;
+    /* 테두리 색상 변경 */
+}
+
+.header-box2-center label {
+    color: #666;
+    /* 회색으로 변경 */
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.header-box2-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80px;
+}
+
+.header-box2-right img {
+    height: 30px;
+}
+
+nav {
+    width: 1200px;
+    margin: 0 auto 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left img {
+    height: 30px;
+    margin-right: 5px;
+}
+
+.nav-left span {
+    font-size: 18px;
+}
+
+.nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 100px;
+    letter-spacing: -1px;
+}
+
+.highlight {
+    color: red;
+}
+
+.nav-center a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: #5F0080;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.box1 {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.card {
+    margin: 10px;
+}
+
+.left-card {
+    flex-basis: 40%;
+    /* 이미지가 잘리지 않도록 설정 */
+    overflow: hidden;
+}
+
+.left-card img {
+    width: 100%;
+    height: auto;
+    /* 이미지의 비율을 유지하면서 폭에 맞춤 */
+}
+
+.right-card {
+    flex-basis: 60%;
+    padding-left: 30px;
+    border: none; /* 테두리 제거 */
+    /* 필요한 경우 여기에 추가적인 스타일을 적용 */
+}
+
+
+.box2 {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px 0;
+}
+
+.box2-title {
+    color: #5f0080;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    width: 23%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.card-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+    /* 내용이 넘치지 않도록 overflow 속성 추가 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-image img {
+    width: 80%;
+    height: auto;
+}
+
+.card-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(95, 0, 128, 0.8);
+    padding: 5px;
+}
+
+.card-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.card-content {
+    text-align: left;
+    padding: 10px;
+    height: 100%;
+    /* 높이를 100%로 설정 */
+    box-sizing: border-box;
+    /* border와 padding 영역을 요소의 크기에 포함시키도록 설정 */
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.card-content p {
+    margin: 10px 0 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.box3 {
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.box3-left img {
+    height: 80px;
+    margin-right: 50px;
+    align-items: center;
+}
+
+.box3-center span {
+    font-size: 18px;
+    margin-right: 50px;
+    align-items: center;
+}
+
+.box3-center label {
+    color: #666;
+    /* 회색으로 변경 */
+    font-size: 14px;
+    margin-right: 50px;
+}
+
+.box3-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+}
+
+.box3-right a {
+    color: #000;
+    text-decoration: none;
+    margin-left: 5px;
+    border-bottom: none;
+}
+

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- �븘�옒 遺�遺� 蹂듭궗 遺숈뿬 �꽔湲� -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- 蹂듭궗 遺숈뿬 �꽔湲� -->
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header-box1">
+                <div class="header-box1-right">
+                    <a href="#">회원가입</a>
+                    <a href="#">로그인</a>
+                    <a href="#">고객센터</a>
+                </div>
+            </div>
+            <div class="header-box2">
+                <div class="header-box2-left">
+                    <a href="02_index.html">
+                        <img src="Image/logo2.jpg" alt="Logo" class="logo" />
+                    </a>
+
+                </div>
+                <div class="header-box2-center">
+                    <form>
+                        <label for="search">검색어를 입력해주세요</label>
+                        <input type="text" id="search" name="search">
+                        <button type="submit">
+                            <span class="material-symbols-outlined">search</span>
+                        </button>
+                    </form>
+                </div>
+                <div class="header-box2-right">
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                    <span class="material-symbols-outlined">
+                        favorite
+                    </span>
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                </div>
+            </div>
+        </header>
+
+        <nav>
+            <div class="nav-left">
+                <span class="material-symbols-outlined"> menu </span>
+                <span class="category-text">카테고리</span>
+            </div>
+            <div class="nav-center">
+                <a href="Rice_detail.html">취사기</a>
+                <a href="soup_detail.html">국솥</a>
+                <a href="Griddle_detail.html">그리들</a>
+                <a href="range_detail.html">렌지</a>
+                <a href="Image/hot_detail">순간온수기</a>
+                <a href="Yukong_detail.html">YUKONG</a>
+            </div>
+            <div class="nav-right">
+                <button class="btn">신상품 안내</button>
+            </div>
+        </nav>
+
+        <div class="box1">
+            <div class="box1-content">
+                <div class="slider-container">
+                    <div class="slide">
+                        <img src="Image/BGP_1[크기변환]2.jpg" alt="Image 1">
+                        <div class="slide-text">인덕션 주방기구의 <br> 종합메이커 FMG</div>
+                    </div>
+                    <div class="slide" style="display: none;">
+                        <img src="Image/BGP_2.jpg" alt="Image 2">
+                        <div class="slide-text">FMG가 주방기구의 <br> 혁신을 선도합니다.</div>
+                    </div>
+                    <div class="slide" style="display: none;">
+                        <img src="Image/BGP_3.jpg" alt="Image 3">
+                        <div class="slide-text">급속온수기의 혁명<br> "인덕션 순간온수기"</div>
+                    </div>
+                    <button class="slide-btn prev">&#10094;</button>
+                    <button class="slide-btn next">&#10095;</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="box2">
+            <h1 class="box2-title">FMG 제품 소개</h1>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="Rice_detail.html">
+                            <img src="Image/Rice_cooker 3.png" alt="상품1">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3>[FMG] 취사기</h3>
+                        <p>가격 : 회사문의</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <a href="soup_detail.html">
+                            <img src="Image/Soup_1.png" alt="상품2">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3>[FMG] 국솥</h3>
+                        <p>가격 : 회사문의</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <a href="Griddle_detail.html">
+                            <img src="Image/Gridle_1.png" alt="상품3">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3>[FMG] 그리들 </h3>
+                        <p>가격 : 회사문의</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <a href="range_detail.html">
+                            <img src="Image/Lower Range_1.png" alt="상품4">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3>[FMG] 렌지</h3>
+                        <p>가격 : 회사문의</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <a href="Yukong_detail.html">
+                            <img src="Image/Yukong_main.png" alt="상품5">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3>[FMG] YUKONG</h3>
+                        <p>가격 : 회사문의</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box3">
+            <div class="box3-left">
+                <img src="Image/ICON_1.png" alt="Logo" class="logo" />
+            </div>
+            <div class="box3-center">
+                <span> 경기도 수원시 권선구 동수원로 145번길 </span><br>
+                <span> TEL : 031-232-7516 FAX : 031-232-7517 </span>
+            </div>
+            <div class="box3-right">
+                <h2>고객센터 </h2>
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        let slideIndex = 0;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            if (n >= slides.length) { slideIndex = 0 }
+            if (n < 0) { slideIndex = slides.length - 1 }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex].style.display = "block";
+        }
+
+        document.querySelector('.prev').addEventListener('click', function () {
+            plusSlides(-1);
+        });
+
+        document.querySelector('.next').addEventListener('click', function () {
+            plusSlides(1);
+        });
+
+        function autoSlide() {
+            plusSlides(1);
+        }
+
+        // 2초마다 autoSlide 함수 호출
+        setInterval(autoSlide, 2500);
+
+        const cardContainer = document.querySelector('.card-container');
+        cardContainer.addEventListener('click', (event) => {
+            if (event.target.tagName === 'IMG') {
+                const card = event.target.parentElement;
+                window.location.href = 'detail.html';
+            }
+        });
+
+    </script>
+</body>
+
+</html>
